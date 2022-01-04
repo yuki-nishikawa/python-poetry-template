@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "template"
+version = "0.1.0"
+description = ""
+authors = ["yuki-nishikawa <52784638+yuki-nishikawa@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+mypy = "^0.930"
+black = "^21.12b0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+autoflake = "^1.4"
+
+[tool.black]
+line-length = 131
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 131
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
