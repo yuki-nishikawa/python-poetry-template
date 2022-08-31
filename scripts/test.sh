@@ -3,4 +3,4 @@
 set -e
 set -x
 
-pytest --cov=. --cov-report=term-missing ./tests "${@}"
+poetry run pytest --cov=. --cov-report=term-missing ./tests "${@}"

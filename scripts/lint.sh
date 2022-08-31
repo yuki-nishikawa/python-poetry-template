@@ -4,7 +4,7 @@ set -x
 
 TOPDIR="."
 
-mypy ${TOPDIR}
-black ${TOPDIR} --check
-isort --check-only ${TOPDIR}
-flake8
+poetry run mypy ${TOPDIR}
+poetry run black ${TOPDIR} --check
+poetry run isort --check-only ${TOPDIR}
+poetry run flake8
