@@ -1,6 +1,6 @@
 init:
 	poetry install
 
-check:
+format:
 	sh scripts/format-imports.sh
 	sh scripts/lint.sh
