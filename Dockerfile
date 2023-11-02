@@ -1,4 +1,4 @@
-FROM python:3.9-slim AS builder
+FROM python:3.11-slim AS builder
 LABEL version="0.1"
 LABEL description="test_server"
 
